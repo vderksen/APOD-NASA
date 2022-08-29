@@ -19,10 +19,10 @@ const navTheme = {
 export default function App() {
 
   const [loaded] = useFonts({
-    'Inter-Bold': require('/Users/Valya/apod-nasa/assets/fonts/Inter-Bold.otf'), 
-    'Inter': require('/Users/Valya/apod-nasa/assets/fonts/Inter-Regular.otf'),
-    'Inter-SemiBold': require('/Users/Valya/apod-nasa/assets/fonts/Inter-SemiBold.otf'),
-    'SF Pro Text': require('/Users/Valya/apod-nasa/assets/fonts/FontsFree-Net-SFProText-Regular.ttf'),
+    'Inter-Bold': require('./assets/fonts/Inter-Bold.otf'), 
+    'Inter': require('./assets/fonts/Inter-Regular.otf'),
+    'Inter-SemiBold': require('./assets/fonts/Inter-SemiBold.otf'),
+    'SF Pro Text': require('./assets/fonts/FontsFree-Net-SFProText-Regular.ttf'),
   });
 
   if (!loaded) {

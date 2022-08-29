@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, StyleSheet, Image, ScrollView, SafeAreaView } from 'react-native';
-//import Header from './Header';
 
 const ImageInfoScreen = ({route}) => {
 

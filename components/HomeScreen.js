@@ -22,6 +22,7 @@ const HomeScreen = ({}) => {
         setEndDate(date);
     };
 
+    // Fetch data frpm api
     const searchHandler = () => {
         setisLoadingData(true);
         setShowData(true)
