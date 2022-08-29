@@ -16,7 +16,7 @@ Install the Expo Go app on your iOS or Android phone and connect to the same wir
 ---
 ### Project Screens on Iphone 11
 
-<img src="https://github.com/vderksen/APOD-NASA/blob/main/assets/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-08-28%20at%2016.40.48.png" width="150" height="250">
-<img src="https://github.com/vderksen/APOD-NASA/blob/main/assets/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-08-29%20at%2010.58.10.png" width="150" height="250">
-<img src="https://github.com/vderksen/APOD-NASA/blob/main/assets/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-08-29%20at%2010.58.21.png" width="150" height="250">
-<img src="https://github.com/vderksen/APOD-NASA/blob/main/assets/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-08-29%20at%2010.58.26.png" width="150" height="250">
+<img src="https://github.com/vderksen/APOD-NASA/blob/main/assets/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-08-28%20at%2016.40.48.png" width="200" height="350">
+<img src="https://github.com/vderksen/APOD-NASA/blob/main/assets/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-08-29%20at%2010.58.10.png" width="200" height="350">
+<img src="https://github.com/vderksen/APOD-NASA/blob/main/assets/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-08-29%20at%2010.58.21.png" width="200" height="350">
+<img src="https://github.com/vderksen/APOD-NASA/blob/main/assets/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-08-29%20at%2010.58.26.png" width="200" height="350">
