@@ -1,45 +1,66 @@
-import React, { useEffect, useCallback } from 'react';
-import { View } from 'react-native';
-import * as SplashScreen from 'expo-splash-screen';
-import { useFonts } from 'expo-font';
-//import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
-//import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React from 'react';
 import HomeScreen from './components/HomeScreen';
+import ImageInfoScreen from './components/ImageInfoScreen';
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { useFonts } from 'expo-font';
 
 
-// Keep the splash screen visible while we fetch resources
-//SplashScreen.preventAutoHideAsync();
+const Stack = createNativeStackNavigator();
+
+const navTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    background: 'transparent',
+  },
+};
 
 export default function App() {
 
-  const [fontsLoaded] = useFonts({
-    'Inter-Bold': require('./assets/fonts/Inter-Bold.otf'),
-    'Inter': require('./assets/fonts/Inter-Regular.otf'),
-    'Inter-SemiBold': require('./assets/fonts/Inter-SemiBold.otf'),
-    'SF Pro Text': require('./assets/fonts/FontsFree-Net-SFProText-Regular.ttf'),
+  const [loaded] = useFonts({
+    'Inter-Bold': require('/Users/Valya/apod-nasa/assets/fonts/Inter-Bold.otf'), 
+    'Inter': require('/Users/Valya/apod-nasa/assets/fonts/Inter-Regular.otf'),
+    'Inter-SemiBold': require('/Users/Valya/apod-nasa/assets/fonts/Inter-SemiBold.otf'),
+    'SF Pro Text': require('/Users/Valya/apod-nasa/assets/fonts/FontsFree-Net-SFProText-Regular.ttf'),
   });
 
-  useEffect(() => {
-      async function prepare() {
-      await SplashScreen.preventAutoHideAsync();
-      }
-      
-      prepare();
-  }, []);
-
-  const onLayoutRootView = useCallback(async () => {
-      if (fontsLoaded) {
-      await SplashScreen.hideAsync();
-      }
-  }, [fontsLoaded]);
-
-  if (!fontsLoaded) {
-      return null;
+  if (!loaded) {
+    return null;
   }
-
+  
   return (
-    <View onLayout={onLayoutRootView}>
-      <HomeScreen />
-    </View>
+    <NavigationContainer theme={navTheme}>
+      <Stack.Navigator 
+        initialRouteName='Home'>
+        <Stack.Screen 
+          name="Home" 
+          component={HomeScreen} 
+          options={{
+            title: "Picture of the day",
+            headerStyle: { heigh: 26 },
+            headerTitleStyle: {
+              fontSize: 22,
+              fontFamily: 'Inter-Bold',
+              color: '#202A41'},
+              headerShadowVisible: false
+          }}/>
+        <Stack.Screen 
+          name="ImageInfo" 
+          component={ImageInfoScreen} 
+          options={({ route }) => ({ 
+            title: route.params.imgTitle,
+            headerStyle: { heigh: 26 },
+            headerTitleStyle: {
+              fontSize: 22,
+              fontFamily: 'Inter-Bold',
+              color: '#202A41'},
+            headerShadowVisible: false, 
+            headerBackTitleVisible: true,
+            headerBackTitleVisible: '',
+            headerTintColor:'#5F6E91'
+          })} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }

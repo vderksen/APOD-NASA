@@ -60,7 +60,7 @@ const UserInput = () => {
                     isLoadingData ? (
                     <Text>LOADING DATA........</Text>
                     ) : (
-                        <Result imgData={data}/>
+                        <Result imgData={data} />
                         )
                     ) : (
                         <NoResult />

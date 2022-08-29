@@ -1,7 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, FlatList, TouchableWithoutFeedback } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const Result = ({imgData}) => {
+
+    const navigation = useNavigation();
 
     return(
         <View>
@@ -12,7 +15,8 @@ const Result = ({imgData}) => {
                 <FlatList data={imgData} 
                     numColumns={3}
                     renderItem = {itemData => (
-                        <TouchableWithoutFeedback onPress={() => console.log('pressed')}>
+                        <TouchableWithoutFeedback onPress={() => navigation.navigate('ImageInfo', {
+                            imgTitle: itemData.item.title, imgUrl: itemData.item.url, explanation: itemData.item.explanation})}>
                             <Image key={itemData.item.date} style={styles.image} source={{ uri: itemData.item.url }} /> 
                         </TouchableWithoutFeedback>)}/>
                 </View>
