@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+>
+  <View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "alignSelf": "stretch",
+            "flexDirection": "column",
+            "height": 64,
+            "padding": 15.5,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#202A41",
+                "fontFamily": "Inter-SemiBold",
+                "fontSize": 18,
+                "height": 24,
+                "paddingTop": 5,
+                "width": "100%",
+              }
+            }
+          >
+            Picture of the day:
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "alignItems": "stretch",
+                "color": "#171F30",
+                "fontFamily": "SF Pro Text",
+                "fontSize": 14,
+                "height": 16,
+                "width": "100%",
+              }
+            }
+          >
+            Search for Astronomy: Picture of the day by date.
+          </Text>
+        </View>
+        <TextInput
+          keyboardType="numeric"
+          label="Start date"
+          maxLength={10}
+          onChangeText={[Function]}
+          placeholder="Start date"
+          style={
+            Object {
+              "backgroundColor": "#F7F9FC",
+              "borderRadius": 8,
+              "color": "#5F6E91",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "height": 64,
+              "marginVertical": 8,
+              "paddingHorizontal": 16,
+              "paddingVertical": 22,
+              "width": "100%",
+            }
+          }
+          value=""
+        />
+        <TextInput
+          keyboardType="numeric"
+          label="End date"
+          maxLength={10}
+          onChangeText={[Function]}
+          placeholder="End date"
+          style={
+            Object {
+              "backgroundColor": "#F7F9FC",
+              "borderRadius": 8,
+              "color": "#5F6E91",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "height": 64,
+              "marginVertical": 8,
+              "paddingHorizontal": 16,
+              "paddingVertical": 22,
+              "width": "100%",
+            }
+          }
+          value=""
+        />
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#F7F9FC",
+              "borderColor": "#5F6E91",
+              "borderRadius": 8,
+              "borderWidth": 2,
+              "height": 48,
+              "justifyContent": "center",
+              "marginVertical": 8,
+              "padding": 12,
+              "width": "100%",
+            }
+          }
+          testID="searchButton"
+        >
+          <Text
+            style={
+              Object {
+                "color": "#5F6E91",
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Search
+          </Text>
+        </View>
+        <View>
+          <View
+            style={
+              Object {
+                "height": 48,
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "paddingVertical": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#171F30",
+                    "fontFamily": "Inter-SemiBold",
+                    "fontSize": 16,
+                    "height": 20,
+                    "width": "100%",
+                  }
+                }
+                testID="noResult"
+              >
+                Result (0):
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "paddingVertical": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#171F30",
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "height": 20,
+                    "width": "100%",
+                  }
+                }
+              >
+                No result found. Enter a start and end date.
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTSafeAreaView>
+`;

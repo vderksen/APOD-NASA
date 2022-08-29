@@ -62,14 +62,14 @@ const HomeScreen = ({}) => {
                             style={styles.dateInput} 
                             onChangeText={date => endDateInputHandler(date)} 
                             value={endDate}/>
-                        <TouchableWithoutFeedback onPress={searchHandler}>
+                        <TouchableWithoutFeedback onPress={searchHandler} testID="searchButton">
                             <View style={styles.button} >
                                 <Text style={styles.btnText}>Search</Text>
                             </View>
                         </TouchableWithoutFeedback>
                         {showData ? (
                             isLoadingData ? (
-                            <Text>LOADING DATA........</Text>
+                            <Text testID="loading">LOADING DATA........</Text>
                             ) : (
                                 <Result imgData={data} />
                                 )

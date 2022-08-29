@@ -6,7 +6,7 @@ const NoResult = () => {
     return(
         <View>
             <View style={styles.textContainer}>
-                <View style={{paddingVertical: 8}}><Text style={styles.result}>Result (0):</Text></View>
+                <View style={{paddingVertical: 8}}><Text testID="noResult" style={styles.result}>Result (0):</Text></View>
                 <View style={{paddingVertical: 8}}><Text style={styles.text}>No result found. Enter a start and end date.</Text></View>
             </View>
         </View>   
