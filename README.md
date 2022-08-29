@@ -15,4 +15,4 @@ Install the Expo Go app on your iOS or Android phone and connect to the same wir
  
 ---
 Project Screens on Iphone 11
-![alt text](https://github.com/vderksen/APOD-NASA/blob/main/assets/icon.png  "1st Screen")
+![alt text](https://github.com/vderksen/APOD-NASA/blob/main/assets/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202022-08-28%20at%2016.40.48.png "1st Screen")
